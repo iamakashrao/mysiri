@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I3-qZ-sCC">
+                                <rect key="frame" x="73" y="512" width="55" height="48"/>
+                                <state key="normal" image="idle.png"/>
+                                <connections>
+                                    <action selector="mictapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wCg-q9-45C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="IKM-zq-0a2">
+                                <rect key="frame" x="0.0" y="365" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBC-Qz-Fp0">
+                                <rect key="frame" x="125" y="273" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHM-Pb-26L">
+                                <rect key="frame" x="191" y="512" width="45" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="lnf-x3-RNu"/>
+                                    <constraint firstAttribute="height" constant="42" id="uOF-p7-NSn"/>
+                                </constraints>
+                                <state key="normal" image="stop.ico"/>
+                                <connections>
+                                    <action selector="mictapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdV-tQ-gOo"/>
+                                    <action selector="stoptapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhz-Pm-7Gg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dHM-Pb-26L" secondAttribute="bottom" constant="14" id="UC8-0R-z3A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dHM-Pb-26L" secondAttribute="trailing" constant="68" id="a9P-lb-Wvy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5I3-qZ-sCC" secondAttribute="bottom" constant="8" symbolic="YES" id="fVc-wB-q5C"/>
+                            <constraint firstItem="5I3-qZ-sCC" firstAttribute="top" secondItem="dHM-Pb-26L" secondAttribute="top" id="gxF-96-CAc"/>
+                            <constraint firstItem="5I3-qZ-sCC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="o8e-De-kWN"/>
+                            <constraint firstItem="dHM-Pb-26L" firstAttribute="leading" secondItem="5I3-qZ-sCC" secondAttribute="trailing" constant="63" id="rrX-jV-Xb5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Vollevel" destination="PBC-Qz-Fp0" id="e6h-wI-TPE"/>
+                        <outlet property="statuslabel" destination="IKM-zq-0a2" id="oIY-nr-DDb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="155" y="231"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="idle.png" width="400" height="400"/>
+        <image name="stop.ico" width="256" height="256"/>
+    </resources>
 </document>

@@ -12,7 +12,27 @@
 		C81A3F761CBC3B2E00952172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81A3F741CBC3B2E00952172 /* Main.storyboard */; };
 		C81A3F781CBC3B2E00952172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81A3F771CBC3B2E00952172 /* Assets.xcassets */; };
 		C81A3F7B1CBC3B2E00952172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81A3F791CBC3B2E00952172 /* LaunchScreen.storyboard */; };
+		C81A3F831CBC3E6500952172 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81A3F821CBC3E6500952172 /* SpeechKit.framework */; };
+		C81A3F861CBCB11800952172 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81A3F821CBC3E6500952172 /* SpeechKit.framework */; };
+		C81A3F871CBCB11800952172 /* SpeechKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C81A3F821CBC3E6500952172 /* SpeechKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C81A3F8E1CBCBCA700952172 /* SKSConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = C81A3F8D1CBCBCA700952172 /* SKSConfiguration.mm */; };
+		C81A3F901CBCEED500952172 /* idle.png in Resources */ = {isa = PBXBuildFile; fileRef = C81A3F8F1CBCEED500952172 /* idle.png */; };
+		C81A3F921CBCEEDE00952172 /* stop.ico in Resources */ = {isa = PBXBuildFile; fileRef = C81A3F911CBCEEDE00952172 /* stop.ico */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C81A3F881CBCB11900952172 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C81A3F871CBCB11800952172 /* SpeechKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C81A3F6D1CBC3B2D00952172 /* test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +42,12 @@
 		C81A3F771CBC3B2E00952172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C81A3F7A1CBC3B2E00952172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C81A3F7C1CBC3B2E00952172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81A3F821CBC3E6500952172 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
+		C81A3F851CBC480E00952172 /* test4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test4-Bridging-Header.h"; sourceTree = "<group>"; };
+		C81A3F8C1CBCBCA700952172 /* SKSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSConfiguration.h; sourceTree = "<group>"; };
+		C81A3F8D1CBCBCA700952172 /* SKSConfiguration.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKSConfiguration.mm; sourceTree = "<group>"; };
+		C81A3F8F1CBCEED500952172 /* idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idle.png; sourceTree = "<group>"; };
+		C81A3F911CBCEEDE00952172 /* stop.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = stop.ico; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81A3F831CBC3E6500952172 /* SpeechKit.framework in Frameworks */,
+				C81A3F861CBCB11800952172 /* SpeechKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +85,15 @@
 				C81A3F701CBC3B2D00952172 /* AppDelegate.swift */,
 				C81A3F721CBC3B2D00952172 /* ViewController.swift */,
 				C81A3F741CBC3B2E00952172 /* Main.storyboard */,
+				C81A3F8C1CBCBCA700952172 /* SKSConfiguration.h */,
+				C81A3F8D1CBCBCA700952172 /* SKSConfiguration.mm */,
+				C81A3F821CBC3E6500952172 /* SpeechKit.framework */,
 				C81A3F771CBC3B2E00952172 /* Assets.xcassets */,
+				C81A3F8F1CBCEED500952172 /* idle.png */,
+				C81A3F911CBCEEDE00952172 /* stop.ico */,
 				C81A3F791CBC3B2E00952172 /* LaunchScreen.storyboard */,
 				C81A3F7C1CBC3B2E00952172 /* Info.plist */,
+				C81A3F851CBC480E00952172 /* test4-Bridging-Header.h */,
 			);
 			path = test4;
 			sourceTree = "<group>";
@@ -74,6 +108,7 @@
 				C81A3F691CBC3B2D00952172 /* Sources */,
 				C81A3F6A1CBC3B2D00952172 /* Frameworks */,
 				C81A3F6B1CBC3B2D00952172 /* Resources */,
+				C81A3F881CBCB11900952172 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C81A3F7B1CBC3B2E00952172 /* LaunchScreen.storyboard in Resources */,
+				C81A3F901CBCEED500952172 /* idle.png in Resources */,
+				C81A3F921CBCEEDE00952172 /* stop.ico in Resources */,
 				C81A3F781CBC3B2E00952172 /* Assets.xcassets in Resources */,
 				C81A3F761CBC3B2E00952172 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81A3F8E1CBCBCA700952172 /* SKSConfiguration.mm in Sources */,
 				C81A3F731CBC3B2D00952172 /* ViewController.swift in Sources */,
 				C81A3F711CBC3B2D00952172 /* AppDelegate.swift in Sources */,
 			);
@@ -247,10 +285,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test4",
+				);
 				INFOPLIST_FILE = test4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-l\"c++\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextsap.test4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test4/test4-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -258,10 +302,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test4",
+				);
 				INFOPLIST_FILE = test4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-l\"c++\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextsap.test4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test4/test4-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +334,7 @@
 				C81A3F811CBC3B2E00952172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
